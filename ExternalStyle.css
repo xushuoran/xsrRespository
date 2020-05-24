@@ -1,0 +1,111 @@
+/*外部样式表*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(244,244,246);
+    padding-top: 44px;
+    /*也可在.DS_second_section img中设置padding-top: 44px;*/
+    padding-bottom: 40px;
+}
+
+/*定位：固定定位/绝对定位/相对定位
+    1.确定元素的位置(x，y坐标)
+    2.确定元素的宽高
+    3.加个螺丝刀
+    4.把被遮挡的元素露出来
+*/
+
+header{
+    background: rgb(40,133,202);
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    position: fixed;
+    /*页面元素层次设置:越大越在上*/
+    z-index: 999;
+}
+
+/*100%代表铺满整个屏幕*/
+.DS_second_section img{
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 40px;
+
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}
+footer a span{
+    display: block;
+    font-size: 12px;
+}
+
+footer a img{
+    width: 18px;
+}
+
+/*EnterpriseProject部分*/
+.EP_second_section ul{
+    display: table;
+    width: 100%;
+    background: rgb(244,244,247);
+    height: 40px;
+
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+
+.EP_second_section ul li{
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.EP_second_section ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.EP_third_section{padding-top: 40px;}
+.EP_third_section img{width: 100%;}
+
+.EP_third_section h4{
+    font-size: 14px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.EP_third_section  p{
+    font-size: 12px;
+    text-indent: 2em;
+    line-height: 2em;
+    color: #8C8C8C;
+}
+.EP_third_section_internal{background-color: white}
